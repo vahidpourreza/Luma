@@ -1,0 +1,76 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Luma.Extensions.Caching.Abstractions", "Luma.Extensions.Caching.Abstractions\Luma.Extensions.Caching.Abstractions.csproj", "{AE75083F-D531-4B73-804E-B93656430BD5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Luma.Extensions.ChangeDataLog.Abstractions", "Luma.Extensions.ChangeDataLog.Abstractions\Luma.Extensions.ChangeDataLog.Abstractions.csproj", "{5D7FE557-4C18-4233-9422-F946277BD6DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Luma.Extensions.DependencyInjection.Abstractions", "Luma.Extensions.DependencyInjection.Abstractions\Luma.Extensions.DependencyInjection.Abstractions.csproj", "{8AB56E3F-A978-4616-B8D2-B2FE4B7F83CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Luma.Extensions.Events.Abstractions", "Luma.Extensions.Events.Abstractions\Luma.Extensions.Events.Abstractions.csproj", "{2430EAD7-00CA-49CE-B91C-A729BFC566C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Luma.Extensions.Logger.Abstractions", "Luma.Extensions.Logger.Abstractions\Luma.Extensions.Logger.Abstractions.csproj", "{464B2FCD-2ABE-4BEA-8236-38F904A88497}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Luma.Extensions.MessageBus.Abstractions", "Luma.Extensions.MessageBus.Abstractions\Luma.Extensions.MessageBus.Abstractions.csproj", "{A43AB70A-B752-423D-84FB-E8B49724C342}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Luma.Extensions.ObjectMappers.Abstractions", "Luma.Extensions.ObjectMappers.Abstractions\Luma.Extensions.ObjectMappers.Abstractions.csproj", "{1EAC28FE-3A9B-4D23-95C9-20997BFFCCAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Luma.Extensions.Serializers.Abstractions", "Luma.Extensions.Serializers.Abstractions\Luma.Extensions.Serializers.Abstractions.csproj", "{8E365F2E-CCAF-487A-A866-8E51DC0B2A70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Luma.Extensions.Translations.Abstractions", "Luma.Extensions.Translations.Abstractions\Luma.Extensions.Translations.Abstractions.csproj", "{B1842A26-A31E-4D7C-AF2E-3A55C8C4EF49}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Luma.Extensions.UsersManagement.Abstractions", "Luma.Extensions.UsersManagement.Abstractions\Luma.Extensions.UsersManagement.Abstractions.csproj", "{B3BF23C7-A0B4-4225-BAB3-31FB1E424F72}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AE75083F-D531-4B73-804E-B93656430BD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE75083F-D531-4B73-804E-B93656430BD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE75083F-D531-4B73-804E-B93656430BD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE75083F-D531-4B73-804E-B93656430BD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D7FE557-4C18-4233-9422-F946277BD6DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D7FE557-4C18-4233-9422-F946277BD6DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D7FE557-4C18-4233-9422-F946277BD6DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D7FE557-4C18-4233-9422-F946277BD6DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AB56E3F-A978-4616-B8D2-B2FE4B7F83CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AB56E3F-A978-4616-B8D2-B2FE4B7F83CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AB56E3F-A978-4616-B8D2-B2FE4B7F83CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AB56E3F-A978-4616-B8D2-B2FE4B7F83CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2430EAD7-00CA-49CE-B91C-A729BFC566C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2430EAD7-00CA-49CE-B91C-A729BFC566C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2430EAD7-00CA-49CE-B91C-A729BFC566C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2430EAD7-00CA-49CE-B91C-A729BFC566C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{464B2FCD-2ABE-4BEA-8236-38F904A88497}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{464B2FCD-2ABE-4BEA-8236-38F904A88497}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{464B2FCD-2ABE-4BEA-8236-38F904A88497}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{464B2FCD-2ABE-4BEA-8236-38F904A88497}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A43AB70A-B752-423D-84FB-E8B49724C342}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A43AB70A-B752-423D-84FB-E8B49724C342}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A43AB70A-B752-423D-84FB-E8B49724C342}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A43AB70A-B752-423D-84FB-E8B49724C342}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EAC28FE-3A9B-4D23-95C9-20997BFFCCAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EAC28FE-3A9B-4D23-95C9-20997BFFCCAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EAC28FE-3A9B-4D23-95C9-20997BFFCCAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EAC28FE-3A9B-4D23-95C9-20997BFFCCAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E365F2E-CCAF-487A-A866-8E51DC0B2A70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E365F2E-CCAF-487A-A866-8E51DC0B2A70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E365F2E-CCAF-487A-A866-8E51DC0B2A70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E365F2E-CCAF-487A-A866-8E51DC0B2A70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1842A26-A31E-4D7C-AF2E-3A55C8C4EF49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1842A26-A31E-4D7C-AF2E-3A55C8C4EF49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1842A26-A31E-4D7C-AF2E-3A55C8C4EF49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1842A26-A31E-4D7C-AF2E-3A55C8C4EF49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3BF23C7-A0B4-4225-BAB3-31FB1E424F72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3BF23C7-A0B4-4225-BAB3-31FB1E424F72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3BF23C7-A0B4-4225-BAB3-31FB1E424F72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3BF23C7-A0B4-4225-BAB3-31FB1E424F72}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
