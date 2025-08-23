@@ -1,0 +1,45 @@
+﻿
+
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net9.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+
+		<!-- NET_VERSION.YOUR_LIBRARY_VERSION -->
+		<VersionPrefix>9.3.0</VersionPrefix>
+
+		<!-- Pre-release identifier -->
+		<!--<VersionSuffix>alpha</VersionSuffix>-->
+
+		<Authors>Mahta Authors</Authors>
+		<Company>Mahta</Company>
+		<GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+		<Description> Mahta Extensions Caching InMemory </Description>
+		<RepositoryUrl>https://Mahta.Pro</RepositoryUrl>
+		<PackageIcon>icon.png</PackageIcon>
+
+
+	</PropertyGroup>
+
+
+
+	<ItemGroup>
+		<None Include="..\..\..\..\icon.png" Pack="true" PackagePath="" />
+	</ItemGroup>
+
+
+	<ItemGroup>
+		<PackageReference Include="Mahta.Extensions.Caching.Abstractions" Version="9.3.0" />
+		<PackageReference Include="Mahta.Extensions.Serializers.Abstractions" Version="9.3.0" />
+		<PackageReference Include="Microsoft.Extensions.Caching.Abstractions" Version="9.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="9.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Configuration" Version="9.0.0" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.0" />
+	</ItemGroup>
+
+
+
+</Project>
+

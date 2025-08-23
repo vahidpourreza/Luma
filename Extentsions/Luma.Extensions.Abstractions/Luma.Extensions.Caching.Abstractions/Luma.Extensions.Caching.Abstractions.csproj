@@ -1,9 +1,45 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net9.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net9.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<PackageIcon>icon.png</PackageIcon>
+		<Authors>Vahid Pourreza</Authors>
+		<GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+		<Description>Luma Extensions</Description>
+		<!--LIBRARY_VERSION -->
+		<VersionPrefix>9.0.0</VersionPrefix>
+		
+		<!-- Pre-release identifier -->
+		<!--<VersionSuffix>alpha</VersionSuffix>-->
+
+
+		<!-- Set this to true to enable copying -->
+		<CopyToLocalFolder>true</CopyToLocalFolder>
+		<!-- Set your target folder here (absolute or relative) -->
+		<NuGetCopyTargetFolder>D:\Repositories\Luma\Packages</NuGetCopyTargetFolder>
+
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="..\..\..\icon.png">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
+
+	<Target Name="CopyNuGetPackage" AfterTargets="Pack" Condition="'$(CopyToLocalFolder)' == 'true'">
+		<PropertyGroup>
+			<!-- Use the custom target folder -->
+			<PackageOutputPath>$(NuGetCopyTargetFolder)</PackageOutputPath>
+		</PropertyGroup>
+		<ItemGroup>
+			<NuGetPackageFiles Include="$(OutputPath)..\$(PackageId).$(PackageVersion).nupkg" />
+		</ItemGroup>
+		<MakeDir Directories="$(PackageOutputPath)" />
+		<Copy SourceFiles="@(NuGetPackageFiles)" DestinationFolder="$(PackageOutputPath)" />
+		<Message Text="Copied NuGet package to $(PackageOutputPath)" Importance="high" />
+	</Target>
 
 </Project>
