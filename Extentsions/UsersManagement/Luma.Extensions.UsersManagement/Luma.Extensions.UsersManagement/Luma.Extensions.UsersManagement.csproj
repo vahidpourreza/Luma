@@ -1,0 +1,48 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net9.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+
+		<!-- NET_VERSION.YOUR_LIBRARY_VERSION -->
+		<VersionPrefix>9.0.0</VersionPrefix>
+
+		<!-- Pre-release identifier -->
+		<!--<VersionSuffix>alpha</VersionSuffix>-->
+
+		<Authors>Luma Authors</Authors>
+		<Company>Luma</Company>
+		<GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+		<Description> Luma Extensions UsersManagement </Description><PackageIcon>icon.png</PackageIcon>
+
+
+
+	</PropertyGroup>
+
+
+
+	<ItemGroup>
+		<None Include="..\..\..\..\icon.png" Pack="true" PackagePath="" />
+	</ItemGroup>
+	
+	
+	<ItemGroup>
+		<FrameworkReference Include="Microsoft.AspNetCore.App" />
+	</ItemGroup>
+
+	<ItemGroup>
+
+		<PackageReference Include="Luma.Extensions.UsersManagement.Abstractions" Version="9.0.0" />
+
+		<PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="9.0.0" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="9.0.0" />
+	</ItemGroup>
+
+
+</Project>
+
+
+
+

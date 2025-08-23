@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
 		<TargetFramework>net9.0</TargetFramework>
@@ -15,7 +15,6 @@
 		<Company>Luma</Company>
 		<GeneratePackageOnBuild>False</GeneratePackageOnBuild>
 		<Description> Luma Extensions Caching Distributed Redis </Description>
-		<RepositoryUrl>https://Luma.Pro</RepositoryUrl>
 		<PackageIcon>icon.png</PackageIcon>
 
 
