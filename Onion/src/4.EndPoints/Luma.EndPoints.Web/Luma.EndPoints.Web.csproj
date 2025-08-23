@@ -1,0 +1,80 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net9.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+
+		<!-- NET_VERSION.YOUR_LIBRARY_VERSION -->
+		<VersionPrefix>9.0.0</VersionPrefix>
+
+		<!-- Pre-release identifier -->
+		<!--<VersionSuffix>alpha</VersionSuffix>-->
+
+		<Authors>Luma Authors</Authors>
+		<Company>Luma</Company>
+		<GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+		<Description> Luma EndPoints Web </Description><PackageIcon>icon.png</PackageIcon>
+	</PropertyGroup>
+
+
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\1.Utilities\Luma.Utilities\Luma.Utilities.csproj" />
+		<ProjectReference Include="..\..\2.Core\Luma.Core.ApplicationServices\Luma.Core.ApplicationServices.csproj" />
+		<ProjectReference Include="..\..\2.Core\Luma.Core.Contracts\Luma.Core.Contracts.csproj" />
+		<ProjectReference Include="..\..\2.Core\Luma.Core.Domain.Toolkits\Luma.Core.Domain.Toolkits.csproj" />
+		<ProjectReference Include="..\..\2.Core\Luma.Core.Domain\Luma.Core.Domain.csproj" />
+		<ProjectReference Include="..\..\2.Core\Luma.Core.RequestResponse\Luma.Core.RequestResponse.csproj" />
+	</ItemGroup>
+
+
+	<ItemGroup>
+		<None Include="..\..\..\..\icon.png" Pack="true" PackagePath="" />
+	</ItemGroup>
+
+
+	<ItemGroup>
+		<PackageReference Include="Asp.Versioning.Mvc" Version="8.1.0" />
+		<PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="9.0.0" />
+		<PackageReference Include="Microsoft.Extensions.DependencyModel" Version="9.0.0" />
+		<PackageReference Include="Scrutor" Version="5.0.2" />
+		<PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.2" />
+
+	</ItemGroup>
+
+	<ItemGroup>
+		<Using Include="Microsoft.AspNetCore.Builder" />
+		<Using Include="Microsoft.AspNetCore.Hosting" />
+		<Using Include="Microsoft.Extensions.Configuration" />
+		<Using Include="Microsoft.Extensions.Hosting" />
+		<Using Include="Microsoft.Extensions.DependencyInjection" />
+		<Using Include="Microsoft.Extensions.Logging" />
+		<Using Include="Microsoft.Extensions.DependencyModel" />
+		<Using Include="System.Reflection" />
+		<Using Include="Luma.Core.Contracts.ApplicationServices.Commands" />
+		<Using Include="Luma.Core.Contracts.ApplicationServices.Queries" />
+		<Using Include="Luma.Core.RequestResponse.Common" />
+		<Using Include="Luma.Core.RequestResponse.Commands" />
+		<Using Include="Luma.Core.RequestResponse.Queries" />
+		<Using Include="Luma.Core.Contracts.Data.Commands" />
+		<Using Include="Luma.Core.Contracts.Data.Queries" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Folder Include="Filters\" />
+	</ItemGroup>
+
+
+
+
+
+</Project>
+
+
+
+
+
+
+

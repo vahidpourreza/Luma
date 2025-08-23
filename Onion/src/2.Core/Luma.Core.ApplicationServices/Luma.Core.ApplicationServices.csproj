@@ -1,0 +1,55 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net9.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+
+		<!-- NET_VERSION.YOUR_LIBRARY_VERSION -->
+		<VersionPrefix>9.0.0</VersionPrefix>
+
+		<!-- Pre-release identifier -->
+		<!--<VersionSuffix>alpha</VersionSuffix>-->
+
+		<Authors>Luma Authors</Authors>
+		<Company>Luma</Company>
+		<GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+		<Description> Luma Core ApplicationServices </Description>
+		<PackageIcon>icon.png</PackageIcon>
+
+
+
+	</PropertyGroup>
+
+
+
+
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\1.Utilities\Luma.Utilities\Luma.Utilities.csproj" />
+		<ProjectReference Include="..\Luma.Core.Contracts\Luma.Core.Contracts.csproj" />
+		<ProjectReference Include="..\Luma.Core.Domain\Luma.Core.Domain.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="..\..\..\..\icon.png" Pack="true" PackagePath="" />
+	</ItemGroup>
+
+
+	<ItemGroup>
+		<PackageReference Include="FluentValidation" Version="11.11.0" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="9.0.0" />
+	</ItemGroup>
+
+
+
+
+</Project>
+
+
+
+
+
+
+
