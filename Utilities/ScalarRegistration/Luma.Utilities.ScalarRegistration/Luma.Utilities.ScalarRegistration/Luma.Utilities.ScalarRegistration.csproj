@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net9.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+
+		<!-- NET_VERSION.YOUR_LIBRARY_VERSION -->
+		<VersionPrefix>9.0.0</VersionPrefix>
+
+		<!-- Pre-release identifier -->
+		<!--
+		<VersionSuffix>alpha</VersionSuffix>-->
+
+		<Authors>Luma Authors</Authors>
+		<Company>Luma</Company>
+		<GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+		<Description> Luma Utilities ScalarRegistration </Description>
+		<PackageIcon>icon.png</PackageIcon>
+
+
+	</PropertyGroup>
+
+
+
+	<ItemGroup>
+		<None Include="..\..\..\..\icon.png" Pack="true" PackagePath="" />
+	</ItemGroup>
+
+
+
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.7" />
+		<PackageReference Include="Microsoft.Extensions.DependencyModel" Version="9.0.0" />
+		<PackageReference Include="Scalar.AspNetCore" Version="2.6.3" />
+	</ItemGroup>
+
+</Project>
+
+
+
+
+
+
